@@ -1,0 +1,129 @@
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {font-size: 48pt}
+h2 {font-size: 36pt}
+h3 {font-size: 24pt}
+h4 {font-size: 12pt}
+h5 {font-size: 6pt}
+
+.header {
+  height: 150px;
+  display: inline-flex;
+  width: 100%;
+  padding: 10px;
+  background-color: #C0CF1C;
+}
+
+.header .logo-img {
+  height: 130px;
+}
+
+.header .logo-text {
+  padding: 20px;
+}
+
+.container {
+  padding: 20px;
+  box-shadow: 0px -2px 20px grey;
+  background-color: #FFFDE7;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, 260px) 1fr;
+}
+
+.container .sidebar {
+  height: 100%;
+  padding: 0px !important;
+  margin-right: 20px;
+}
+
+.container .sidebar .sidebar-menu {
+  margin-bottom: 30px;
+}
+
+.container .sidebar .sidebar-menu a li {
+  list-style-type: none;
+  border: 1px solid #E5E5E5;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all .5s ease;
+}
+
+.container .sidebar .sidebar-menu a li:hover {
+  color: white;
+  background-color: #0D47A1;
+}
+
+.container .sidebar a {
+  text-decoration: none;
+  color: black;
+}
+
+.container .sidebar .sidebar-currency {
+  border: 1px solid #E5E5E5;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.container .sidebar .sidebar-currency table tr td {
+  padding: 10px 20px;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: black;
+}
+
+.container .sidebar .sidebar-contacts {
+  border: 1px solid #E5E5E5;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.container .sidebar .sidebar-contacts table tr td {
+  padding: 10px;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: black;
+}
+
+.container .content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.container .content-grid .slider {
+  grid-column: 1 / 6;
+}
+
+.container .content .blog {
+  padding: 20px;
+  border: 1px solid #E5E5E5;
+  border-radius: 20px;
+  background-color: white;
+  transition: all .25s ease;
+  cursor: pointer;
+}
+
+.container .content .blog:hover {
+  transform: scale(1.03);
+  box-shadow: 1px 1px 15px #9E9E9E;
+}
+
+.container .content .blog .blog-img {
+  width: 100%;
+}
+
+.bc-white {
+  background-color: #FFFFFF;
+}
